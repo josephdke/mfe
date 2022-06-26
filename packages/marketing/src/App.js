@@ -11,7 +11,7 @@ const generateClassName = createGenerateClassName({
 
 export default ({ history }) => {
     return <div> 
-        prueba
+        prueba2
         <StylesProvider generateClassName={generateClassName}>
             <BrowserRouter>
                 <Switch>
