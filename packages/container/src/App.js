@@ -1,14 +1,15 @@
-import React, { lazy, Suspense, useState, useEffect } from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
-import { StylesProvider, createGenerateClassName } from  '@material-ui/core/styles';
-import { createBrowserHistory } from 'history';
-
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './components/MarketingApp';
+import Header from './components/Header';
 
 export default () => {
-    return <div>
-        <h1>Hi there!2</h1>
-        <hr/>
-        <MarketingApp />
-        </div>;
+    return (
+        <BrowserRouter>
+            <div>
+                <Header />
+                <MarketingApp />
+            </div>
+        </BrowserRouter>
+    );
 };
